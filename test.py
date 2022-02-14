@@ -136,7 +136,7 @@ for file in os.listdir(opt.dataPath):
                                 'editDistance': dist}, ignore_index=True)
         
 #### print and save results ####
-print("Accuracy:", accuracy_score(result.gTruth, result.pred))
+# print("Accuracy:", accuracy_score(result.gTruth, result.pred))
 print('\n')
 print("Edit Distance Distribution")
 print(result.editDistance.value_counts(sort=False))
